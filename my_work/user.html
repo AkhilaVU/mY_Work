@@ -1,0 +1,168 @@
+<html>
+
+<head>
+
+<title>Home</title>
+
+<script type="text/javascript">
+
+var image1=new Image()
+
+image1.src="1.jpg";
+
+var image2=new Image()
+
+image2.src="2.jpg";
+
+</script>
+
+<style>
+body {
+  background-image: url("home.jpg");
+ background-size:1500px 1050px;
+background-repeat: no-repeat;
+ text-align: center;
+}
+
+
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#4caf50;
+}
+li{float:left;}
+li a{display:block;
+color:white;
+text-align:right;
+padding:14px 16px;
+text-decoration:none;
+}
+
+.ex{ 
+  margin-top:auto; 
+padding:0px 1px;
+margin-left:36%; 
+margin-right:auto; 
+margin-bottom:0px; 
+}
+
+.active{background-color:#4caf50;
+}
+
+
+ .left{ margin-top: auto;
+margin-right: 1100px;
+margin-left: auto;
+margin- border-radius: 5px; }
+
+.as{
+
+margin-top:6%;
+margin-left:auto; 
+margin-right:auto; 
+margin-bottom:auto; 
+border: 1px ; }
+</style>
+</head>
+
+<body>
+
+
+<center>
+<font color="green">
+<h1>
+WEDDING_pACK
+</h1>
+
+</font>
+</center>
+<ul>
+<li>
+<a class="active"><img src="heart_beat (1).png" width=26 height=24></a>
+</li>
+<li>
+<a class="active">
+<?php
+include('reg.php');
+echo $a;
+?>
+and Heleena</a>
+</li>
+<div class="ex">
+<li><a class="active" name="#back">
+Home</a>
+</li>
+</div>
+<li>
+<a class="active">Edit Profile</a>
+</li>
+<li>
+ 
+<a class="active" href="login.html">Sign out</a> 
+
+</li>
+<li>
+<a class="active">Photos</a>
+</li>
+<li>
+<a class="active">Videos</a>
+</li>
+<li>
+<a class="active" >Other info:</a>
+</li>
+<li>
+<a class="active" href="contact.html">Contact Us</a>
+</li>
+
+</ul>
+<marquee>
+<font color="blue">
+vuakhila@gmail.com, Marodha_Junction, mumbai Ph: 9400678769, 8281299045,
+</font>
+</marquee><hr>
+
+<center>
+<font color="red">
+<h1>Welcome to our Wedding_Pack</h1>
+</font>
+We have hear to help you for access your wedding videos, pics and other details<br>
+<a href="details.html">read more</a>
+</a>
+<hr>
+<br>
+<br>
+<img src="profile.png">
+<img src="pi">
+<img src=".jpg">
+<img src="otherinfo.png">
+<br>
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+   
+ myIndex++;
+   
+ if (myIndex > x.length) {myIndex = 1}   
+ 
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+ Change image every 2 seconds
+}
+
+</script>
+</div>
+</form>
+</body>
+</html>
